@@ -1,0 +1,59 @@
+## Baseado no padrão oficial do .NET e ferramentas JetBrains/Microsoft
+
+# ------------------------------------------------------------------
+# Compilação e Outputs (.NET / C#)
+# ------------------------------------------------------------------
+[Bb]in/
+[Ob]ject/
+[Oo]bj/
+out/
+artifacts/
+
+# ------------------------------------------------------------------
+# Arquivos Específicos do Avalonia UI & XAML
+# ------------------------------------------------------------------
+# Arquivos temporários gerados pelo compilador de XAML do Avalonia
+*.axaml.g.cs
+*.g.xslt
+
+# ------------------------------------------------------------------
+# Banco de Dados Local (SQLite)
+# ------------------------------------------------------------------
+# Ignora o banco de dados local do app para não enviar dados de teste ao Git
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+AppDbContextModelSnapshot.cs
+
+# ------------------------------------------------------------------
+# Ferramentas de Desenvolvimento e IDEs
+# ------------------------------------------------------------------
+# Rider (JetBrains)
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# ------------------------------------------------------------------
+# Sistema Operacional
+# ------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------------
+# Arquivos de Configuração Sensíveis (Segurança)
+# ------------------------------------------------------------------
+# Arquivos que podem conter strings de conexão ou senhas de teste
+*.env
+*.local.json
+appsettings.Development.json
